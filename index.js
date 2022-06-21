@@ -40,7 +40,7 @@ function App() {
           //  2 components
           //  items vs forms in the components
 
-          <Todo index={i} todo={todo} remove={removeTodo} />
+          <Todo index={i} todo={todo} key={i} remove={removeTodo} />
         ))}
         <TodoForm addTodo={addTodo} />
       </div>
